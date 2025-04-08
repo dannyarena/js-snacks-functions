@@ -3,11 +3,11 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
-// Dichiara la funzione qui.
-
-
-// Invoca la funzione qui e stampa il risultato in console
-
-
-
-//Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+function prendiIniziali(arrayDiNomi) {
+    const iniziali = arrayDiNomi.map(function(nome) {
+      return nome[0];
+    });
+    return iniziali;
+  }
+  
+  console.log(prendiIniziali(names));
