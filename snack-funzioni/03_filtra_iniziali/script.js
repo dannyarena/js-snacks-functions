@@ -3,11 +3,12 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
-// Dichiara la funzione qui.
-
-
-// Invoca la funzione qui e stampa il risultato in console
-
-
-
-//Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+function filtraPerIniziale(arrayNomi, lettera) {
+    const filtrati = arrayNomi.filter(function(nome) {
+      return nome[0] === lettera;
+    });
+    return filtrati;
+  }
+  
+  console.log(filtraPerIniziale(names, "A"));
+  
