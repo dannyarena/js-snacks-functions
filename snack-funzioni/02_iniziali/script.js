@@ -2,12 +2,16 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
+function prendiIniziali(arrayNomi) {
+  const iniziali = [];
 
-function prendiIniziali(arrayDiNomi) {
-    const iniziali = arrayDiNomi.map(function(nome) {
-      return nome[0];
-    });
-    return iniziali;
+  for (let i = 0; i < arrayNomi.length; i++) {
+    const nome = arrayNomi[i];      
+    const iniziale = nome[0];       
+    iniziali.push(iniziale);        
   }
-  
-  console.log(prendiIniziali(names));
+
+  return iniziali;
+}
+
+console.log(prendiIniziali(names));
